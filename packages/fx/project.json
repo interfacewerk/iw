@@ -1,0 +1,44 @@
+{
+  "projectType": "library",
+  "root": "packages/fx",
+  "sourceRoot": "packages/fx/src",
+  "prefix": "iw",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/packages/fx"],
+      "options": {
+        "project": "packages/fx/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/fx/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/fx/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/fx"],
+      "options": {
+        "jestConfig": "packages/fx/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/fx/src/**/*.ts",
+          "packages/fx/src/**/*.html",
+          "packages/fx/testing/**/*.ts",
+          "packages/fx/testing/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

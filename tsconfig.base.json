@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@iw/fx": ["packages/fx/src/index.ts"],
+      "@iw/fx/testing": ["packages/fx/testing/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
