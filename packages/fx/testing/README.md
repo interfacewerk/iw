@@ -1,3 +1,3 @@
-# @iw/fx/testing
+# @iwerk/fx/testing
 
-Secondary entry point of `@iw/fx`. It can be used by importing from `@iw/fx/testing`.
+Secondary entry point of `@iwerk/fx`. It can be used by importing from `@iwerk/fx/testing`.

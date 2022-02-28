@@ -2,7 +2,7 @@
   "projectType": "library",
   "root": "packages/fx",
   "sourceRoot": "packages/fx/src",
-  "prefix": "iw",
+  "prefix": "iwerk",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:package",

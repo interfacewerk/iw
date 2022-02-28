@@ -39,7 +39,7 @@ myEffect$ = createEffect(
 You can customize the confirmation UI by providing a confirmation service when initializing the module.
 
 ```ts
-import { FxModule, Confirm } from '@iw/fx';
+import { FxModule, Confirm } from '@iwerk/fx';
 
 @Injectable()
 class CustomConfirm implements Confirm {

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Injectable, NgModule } from '@angular/core';
-import { Confirm, FxService, FX_CONFIRM, FX_NOTIFIER, Notifier } from '@iw/fx';
+import { Confirm, FxService, FX_CONFIRM, FX_NOTIFIER, Notifier } from '@iwerk/fx';
 import { of } from 'rxjs';
 
 @Injectable()

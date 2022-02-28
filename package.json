@@ -1,11 +1,11 @@
 {
-  "name": "iw",
+  "name": "iwerk",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "postinstall": "ngcc --properties es2015 browser module main"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~13.2.0",
     "@angular/common": "~13.2.0",
@@ -16,7 +16,7 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "@nrwl/angular": "^13.8.3",
-    "rxjs": "~7.4.0",
+    "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },
