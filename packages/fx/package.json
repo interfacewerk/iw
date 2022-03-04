@@ -1,6 +1,13 @@
 {
   "name": "@iwerk/fx",
   "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/interfacewerk/iw"
+  },
+  "bugs": {
+    "url": "https://github.com/interfacewerk/iw/issues"
+  },
+  "homepage": "https://github.com/interfacewerk/iw/tree/main/packages/fx",
   "peerDependencies": {
     "@angular/common": "^13.0.0",
     "@angular/core": "^13.0.0",
