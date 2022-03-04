@@ -9,6 +9,7 @@ import {
   tap,
 } from 'rxjs/operators';
 import { Failure } from '../model/failure';
+import { ExecutionResult } from '../model/result';
 import { Success } from '../model/success';
 import { Confirm, FX_CONFIRM } from '../providers/confirm';
 import { FX_NOTIFIER, Notifier } from '../providers/notifier';
@@ -39,7 +40,7 @@ export class FxService {
   ) {
     return (
       source: Observable<InputType>
-    ): Observable<Success<InputType, OutputType> | Failure<InputType>> => {
+    ): Observable<ExecutionResult<InputType, OutputType>> => {
       return source.pipe(
         switchMap((input) =>
           fn(input).pipe(
@@ -56,7 +57,7 @@ export class FxService {
     failure: (args: { input: InputType; error: unknown }) => FailureReturnType;
   }) {
     return (
-      source: Observable<Success<InputType, OutputType> | Failure<InputType>>
+      source: Observable<ExecutionResult<InputType, OutputType>>
     ) => {
       return source.pipe(
         map((result) => {
@@ -76,7 +77,7 @@ export class FxService {
     }, success: Success<InputType, OutputType>) => void
   ) {
     return (
-      source: Observable<Success<InputType, OutputType> | Failure<InputType>>
+      source: Observable<ExecutionResult<InputType, OutputType>>
     ) => {
       return source.pipe(
         tap((result) => {
@@ -96,7 +97,7 @@ export class FxService {
     }, failure: Failure<InputType>) => void
   ) {
     return (
-      source: Observable<Success<InputType, OutputType> | Failure<InputType>>
+      source: Observable<ExecutionResult<InputType, OutputType>>
     ) => {
       return source.pipe(
         tap((result) => {
