@@ -1,7 +1,24 @@
-# fx
+# @iwerk/fx
 
 This Angular library aims at providing easily usable functions that implement common UX patterns. Those functions are primarily meant to be used with NgRx Effects. The first goal was to make the code more linear and therefore easier to read. All those functions essentially consist in RxJS custom operators.
 
+## Install
+
+```shell
+npm install @iwerk/fx
+```
+
+```ts
+import { FxModule } from '@iwerk/fx';
+
+@NgModule({
+  imports: [
+    ...,
+    FxModule.forRoot()
+  ]
+})
+export class AppModule {}
+```
 
 ## Success and Failure classes
 
